@@ -1054,7 +1054,19 @@
           },
           "error_sequence": {}
         },
-        "output_parameters": []
+        "output_parameters": [ {
+            "name": "web_server_ip_address",
+            "label": "web_server_ip_address",
+            "customtype": "string",
+            "type": "string",
+            "immutable": true,
+            "hidden": false,
+            "required": false,
+            "secured": false,
+            "description": "web_server_ip_address",
+            "default": "${templates.agoamazoae85837a.output.public_ip}"
+          }
+          ]
       }
     ],
     "plans": [
